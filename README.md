@@ -19,6 +19,7 @@ $$S_t + dS_t =  S_t + \int_{t}^{t + \Delta t}{S_ud_u} + \sigma \int_{t}^{t + \De
 To simplify this expression, we will use Euler discretization. We make the assumption that the time steps ($\Delta t$) are small and therefore the stock price shouldn't change much within these brief time intervals. We make a first order approximation and fix the left endpoint t giving us:
 
 $$\int_{t}^{t + \Delta t}{S_ud_u} \approx S_t \int_{t}^{t + \Delta t}{d_u} = S_t \Delta t$$
+
 $$\int_{t}^{t + \Delta t}{S_udw_u} \approx S_t \int_{t}^{t + \Delta t}{dw_u} = S_t(w_{t+\Delta t} -w_t)$$
 
 putting everything together we have:
